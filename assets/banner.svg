@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <!-- Card 1 Gradient -->
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Card 2 Gradient -->
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#F43F5E" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Glowing Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 46px; fill: #FFFFFF; }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 20px; fill: #CBD5E1; }
+    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 13px; fill: #E2E8F0; }
+    
+    /* Keyframe Animations */
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      50% { opacity: 0.7; transform: scale(1.02); }
+      100% { opacity: 0.3; transform: scale(0.98); }
+    }
+    
+    @keyframes floatCard1 {
+      0% { transform: translateY(0px) rotate(-6deg); }
+      50% { transform: translateY(-10px) rotate(-4deg); }
+      100% { transform: translateY(0px) rotate(-6deg); }
+    }
+
+    @keyframes floatCard2 {
+      0% { transform: translateY(0px) rotate(12deg); }
+      50% { transform: translateY(-12px) rotate(14deg); }
+      100% { transform: translateY(0px) rotate(12deg); }
+    }
+
+    @keyframes flowLine {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .animated-bg-circle { animation: pulseGlow 6s infinite ease-in-out; transform-origin: center; }
+    .card-1 { animation: floatCard1 5s infinite ease-in-out; transform-origin: center; }
+    .card-2 { animation: floatCard2 6s infinite ease-in-out; transform-origin: center; }
+    .flow-path { stroke-dasharray: 20, 10; animation: flowLine 15s linear infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="340" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Ambient Dynamic Lighting/Glows (Background Layer) -->
+  <circle cx="150" cy="80" r="180" fill="#818CF8" opacity="0.15" filter="url(#glow)" class="animated-bg-circle"/>
+  <circle cx="1050" cy="260" r="220" fill="#C084FC" opacity="0.15" filter="url(#glow)" class="animated-bg-circle"/>
+
+  <!-- Dynamic Network / Flow Lines (Background Decorative Element) -->
+  <g opacity="0.25">
+    <path d="M 50 280 C 300 200, 500 320, 850 180 T 1150 100" fill="none" stroke="#6366F1" stroke-width="3" class="flow-path"/>
+    <path d="M 100 50 C 400 180, 700 80, 1100 250" fill="none" stroke="#EC4899" stroke-width="2" class="flow-path"/>
+  </g>
+
+  <!-- Decorative Animated Smart Cards (Right Side Background/Midground) -->
+  <g filter="url(#shadow)">
+    <!-- Credit Card 2 (Back) -->
+    <g class="card-2" transform="translate(920, 110)">
+      <rect width="220" height="135" rx="12" fill="url(#cardGrad2)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+      <rect x="20" y="25" width="32" height="24" rx="4" fill="#FDE047" opacity="0.9"/>
+      <line x1="20" y1="85" x2="120" y2="85" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      <line x1="20" y1="100" x2="80" y2="100" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      <circle cx="175" cy="95" r="16" fill="#FFFFFF" opacity="0.25"/>
+      <circle cx="190" cy="95" r="16" fill="#FFFFFF" opacity="0.4"/>
+    </g>
+
+    <!-- Credit Card 1 (Front) -->
+    <g class="card-1" transform="translate(810, 130)">
+      <rect width="240" height="148" rx="14" fill="url(#cardGrad1)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <!-- EMV Chip -->
+      <rect x="24" y="30" width="36" height="26" rx="5" fill="#FACC15"/>
+      <path d="M 24 43 L 60 43 M 42 30 L 42 56" stroke="#B45309" stroke-width="1"/>
+      <!-- Contactless Signal -->
+      <path d="M 195 30 A 12 12 0 0 1 195 50 M 201 26 A 18 18 0 0 1 201 54" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+      <!-- Card Number & Details -->
+      <text x="24" y="95" font-family="monospace" font-size="15" fill="#FFFFFF" letter-spacing="3" opacity="0.95">•••• 4829</text>
+      <text x="24" y="122" font-family="sans-serif" font-size="11" fill="#E0E7FF" font-weight="600">CARD ISSUING API</text>
+      <!-- Logo Circles -->
+      <circle cx="185" cy="115" r="15" fill="#EB001B" opacity="0.9"/>
+      <circle cx="198" cy="115" r="15" fill="#F79E1B" opacity="0.9"/>
+    </g>
+  </g>
+
+  <!-- Foreground Content (Text & Badges - Completely Clear & Unobstructed) -->
+  <g transform="translate(70, 0)">
+    <!-- Category Badge Pills -->
+    <g transform="translate(0, 55)">
+      <rect width="165" height="30" rx="15" fill="#312E81" stroke="#6366F1" stroke-width="1"/>
+      <text x="14" y="20" class="badge-text" fill="#818CF8">💳 CARD ISSUANCE</text>
+
+      <rect x="180" width="165" height="30" rx="15" fill="#831843" stroke="#EC4899" stroke-width="1"/>
+      <text x="194" y="20" class="badge-text" fill="#F472B6">⚡ LEDGER ENGINE</text>
+
+      <rect x="360" width="165" height="30" rx="15" fill="#065F46" stroke="#10B981" stroke-width="1"/>
+      <text x="374" y="20" class="badge-text" fill="#34D399">🛡️ SPEND CONTROLS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="145" class="title">Awesome Card Issuing Platform 🚀</text>
+
+    <!-- Subtitle / Description -->
+    <text x="0" y="190" class="subtitle">Curated Ecosystem of SaaS Solutions, Open-Source Banking Ledgers &amp;</text>
+    <text x="0" y="218" class="subtitle">Programmable Fintech Infrastructure for Modern Card Programs</text>
+
+    <!-- Bottom Feature Highlights -->
+    <g transform="translate(0, 260)">
+      <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#94A3B8">
+        ✓ Virtual &amp; Physical Cards  <tspan dx="20">✓ Just-in-Time Funding</tspan>  <tspan dx="20">✓ Core Banking Ledgers</tspan>  <tspan dx="20">✓ BIN Sponsorship</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
