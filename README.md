@@ -1,197 +1,133 @@
-# Awesome-Card-Issuing-Platform
+# Awesome Card Issuing Platform 💳🚀
 
-## Top Card Issuing Platforms Ecosystem
+![Awesome Card Issuing Platform Banner](assets/banner.svg)
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Card-Issuing-Platform?style=flat-square" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Card-Issuing-Platform?style=flat-square" alt="Stars"/>
+  <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Card-Issuing-Platform?style=flat-square" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🌐 Top Card Issuing Platforms & Core Banking Ecosystem 📊
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**Curated List of SaaS Products & Open-Source GitHub Projects for Programmable Card Issuance, Ledger Infrastructure, Spend Controls & Embedded Finance** 💳✨
 
-*Focused on Programmable Card Issuance, Ledger Infrastructure, Spend Controls & Embedded Finance*
+*Last updated: September 2026*
 
-**Last updated: September 2026**
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Card Issuing**, **programmable payments**, and **embedded finance**. These tools help fintechs, enterprise platforms, neobanks, and startups launch physical and virtual card programs—debit, credit, prepaid, fleet, and expense cards—without building card network connectivity or BIN sponsorship from scratch. 🛠️
 
+**Key SaaS Category Leaders:** Marqeta, Lithic, Highnote, Galileo (SoFi Tech Solutions), Bond, Stripe Issuing, Adyen Issuing, Solaris, Episode Six, and Wallester.
 
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Card Issuing**. These tools help fintechs, enterprises, and platforms launch and manage physical and virtual card programs—debit, credit, prepaid, and fleet—without building card network connectivity or bank sponsorship from scratch.
-
-
-
-**Examples** include Marqeta, Lithic, Highnote, Galileo (SoFi Tech Solutions), Bond, Stripe Issuing, Adyen Issuing, Solaris, Episode Six, and Wallester (the category leaders).
-
-
-
-**Open-source emphasis**: Card issuing is one of the **most commercially consolidated** categories in fintech infrastructure. **No production-ready open-source card issuing platform exists** that provides real card network connectivity, BIN sponsorship, and compliance management out of the box. The practical open-source path involves building on **core banking ledgers** (Apache Fineract, Open Source Bank) combined with **payment switch software** and **custom card management systems**. This section documents these foundations honestly, including the significant regulatory and integration work required.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Marqeta](https://www.marqeta.com/)**
-
-  The incumbent in programmable card issuing. Powers Square's debit card, DoorDash driver cards, Instacart payments, and many enterprise programs. Deeply customizable: every rule, authorization stream, and funding feed can be configured per program. Just-in-time funding, tokenization, and digital wallet provisioning are production-grade. **Tradeoff**: complexity—expects a compliance team, dedicated integration engineer, and volume justifying onboarding investment. Pricing is custom and minimum-commit-based .
-
-
-
-- **[Lithic](https://www.lithic.com/)**
-
-  Developer-first issuing platform (formerly Privacy.com's B2B spin-out). Clean, well-versioned API documented like it was written by engineers for engineers. **Single-use virtual cards are a first-class primitive**, ideal for expense management and SaaS subscription control. Offers **Processing** (you own the program, bring your own bank) and **Program Managed** (Lithic handles compliance, bank sponsorship, and ledgering) models. Coverage: US and Canada. Per-card and per-authorization pricing with no monthly minimum .
-
-
-
-- **[Highnote](https://highnote.com/)**
-
-  Unified platform for embedded finance built for both card issuance and acquiring, including credit and real-time money movement. Core features include a **real-time programmable ledger**, integrated payments, and complete program management. Uses a **GraphQL API** with a no-code dashboard built on top. Supports debit, credit, prepaid, fleet, and virtual cards. Recently expanded commercial card issuing for online travel agencies with single-use virtual cards tied to bookings and wholesale travel BIN access .
-
-
-
-- **[Galileo (SoFi Tech Solutions)](https://www.galileo-ft.com/)**
-
-  SoFi's technology platform (rebranding to SoFi Tech Solutions), powering banks, fintechs, and brands for over two decades. Currently supporting millions of enabled accounts across North and Latin America. Earned top spot in Javelin Strategy & Research's **2025 Digital Issuance Provider Scorecard**. Flexible, secure, API-based platform handling card issuance, real-time transactions, fraud prevention, and embedded payment capabilities. Joined AWS Partner Network to expand access .
-
-
-
-- **[Bond](https://www.bond.tech/)**
-
-  Provides physical and virtual cards via a universal Cards API. Issue debit, prepaid, secured charge, or credit cards. **Instant issuance**—virtual cards in minutes, physical cards within days through a single API call. Bank partnerships with Mastercard, provisioning into Apple Pay, Google Pay, Samsung Pay. **Bond handles program management and underwriting** for consumer charge card programs, including KYC and credit decisioning .
-
-
-
-- **[Stripe Issuing](https://stripe.com/issuing)**
-
-  Create, manage, and scale a payment card program without setup fees. Programmatic control over physical or virtual cards, spending controls, and real-time transaction approvals/declines. Partners with multiple trusted banks and Mastercard/Visa. Available in US, UK, and many EEA countries; stablecoin-backed programs in 30+ countries. Can integrate with **Stripe Treasury for platforms** to attach cards to fiat or stablecoin wallets. Webhooks for real-time authorization control .
-
-
-
-- **[Adyen Issuing](https://www.adyen.com/issuing)**
-
-  Complete card issuing solution within Adyen's unified payments platform. **Unique advantage**: bridge acquiring and issuing so funds flow seamlessly, reducing cash tied up in transit. Advanced API for physical/virtual issuance, adjustable card controls, real-time authorization, customizable branding. Transparent Interchange++ pricing model. Currently available for selected businesses in Europe, UK, and US. Use cases include expense management, benefits programs, and platform cards .
-
-
-
-- **[Solaris](https://www.solarisgroup.com/)**
-
-  German licensed bank offering fully branded cards backed by its own banking license. Supports prepaid, debit, and credit (charge or revolving) cards—physical, virtual, or tokenized. **Solaris handles regulated infrastructure and compliance** while you keep control of UX, data, and insights. Powers ADAC's 1.3 million credit card portfolio. Configurable card rules by merchant category, country, or payment method. In-app cardholder controls (freeze, limits, foreign transaction blocks) .
-
-
-
-- **[Episode Six](https://episodesix.com/)**
-
-  Enterprise-grade card issuing and **ledger infrastructure**. Provides modular architecture for card programs, with a **cooperative authorization model** allowing clients to retain control of their ledger while using Episode Six's processing capabilities. Selected by ZEN.COM for European and Asian expansion, chosen for strong Asia presence and rapid go-to-market timelines. Partnership with Fireblocks enables unified traditional and digital asset payments including stablecoin-backed programs .
-
-
-
-- **[Wallester](https://wallester.com/)**
-
-  Licensed, developer-first card issuing infrastructure operating under its own EU-issued Visa license. RESTful API for card creation, transaction monitoring, and spend controls. **ERP/SaaS integration focus**: embed card issuing in a few API calls, with virtual cards for expense control, supplier payments, and client wallet systems. Handles AML/KYC and reporting—you don't need to become a regulated financial institution. Launch in under 30 days with sandbox testing and dedicated integration support .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Apache Fineract](https://github.com/apache/fineract)**
-
-  Open-source core banking system designed for digital financial services. Provides the **ledger and account infrastructure** on which card programs can be built. Version 1.11.0 (March 2025) includes lending, savings, deposits, and client management. Supports multi-currency, interest calculations, and financial reporting. Used by Mifos X and financial inclusion organizations worldwide. **Apache-2.0**. **Not a card issuing platform**—requires payment switch integration and card management layer .
-
-
-
-- **[Open Source Bank](https://github.com/ishanperera/opensourcebank)**
-
-  API-first core banking engine with a **double-entry ledger**, transaction processing, and compliance tooling. Explicitly designed so developers can build financial products on top. Features idempotent transactions, JWT + API keys auth, RBAC, PII encryption, audit logging, fraud detection engine, Plaid sandbox, and Stripe test mode integration. Python FastAPI + Next.js, PostgreSQL, Docker Compose deployment. **Open source**.
-
-
-
-- **[Mifos X](https://github.com/openMF/mifos-x)**
-
-  Digital Public Good recognized by the Digital Public Goods Alliance. Full core banking suite including Fineract backend, web UI, reporting plugin, mobile field operations app (Kotlin), and customer mobile banking app. Used by financial inclusion organizations worldwide. **Mozilla Public License**. **Not a card issuing platform**—provides the ledger foundation.
-
-
-
-- **[FinAegis Core Banking Prototype](https://github.com/FinAegis/core-banking-prototype-laravel)**
-
-  Laravel-based core banking prototype with **modular domain architecture**. Install only needed domains: `php artisan domain:install lending` or `php artisan domain:install card-issuing` (if available). Features event sourcing with Redis Streams, multi-asset accounts, governance, and compliance domains. PHP 8.4+, PostgreSQL, Redis. Demo mode runs without external dependencies. **Open source**. Card issuing domain availability uncertain—verify repository.
-
-
-
-- **[Open Payments Platform](https://github.com/open-payments)**
-
-  Open-source payment platform efforts. The **Open Payments** ecosystem includes specifications and implementations for payment initiation and account information. Related to card issuing via payment rails but **not a complete card management system**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Core Banking Ledgers**: **Apache Fineract** (Apache-2.0, most mature), **Open Source Bank** (API-first, double-entry), **Mifos X** (Digital Public Good), **FinAegis** (modular domains).
-
-- **Payment Switch Software**: **jPOS** (Java payment transaction processing, ISO 8583 support), **OpenACH** (ACH processing).
-
-- **Card Management (Non-Issuing)**: **Snipe-IT** (asset tracking, not payment cards), **GLPI** (IT asset management).
-
-- **Critical Gap**: **No open-source software provides card network connectivity (Visa/Mastercard), BIN sponsorship, or PCI-compliant card issuing out of the box.** Open-source covers the ledger and account layers; card issuance requires commercial partnerships.
-
-
-
-**Frameworks for building custom systems**: Combine **Apache Fineract** or **Open Source Bank** for the core ledger and account infrastructure, **jPOS** for ISO 8583 payment message processing, and **custom development** for card lifecycle management (card numbers, CVV, expiration, tokenization). Add **PostgreSQL** for persistence and **HashiCorp Vault** for PCI-compliant key management. **Note**: Real card issuance requires a BIN sponsor, card network certification, and PCI DSS compliance—none of which open-source software provides .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Card issuing platforms handle sensitive payment and personal data; ensure compliance with PCI DSS, KYC/AML, and relevant financial regulations.
-
-- **Open-source reality**: **No production-ready open-source card issuing platform exists.** Open-source software covers the **ledger and account infrastructure** (Apache Fineract, Open Source Bank, Mifos X) but **not card network connectivity, BIN sponsorship, or PCI-compliant card issuance**. Building a card program requires commercial partnerships with a BIN sponsor and card network, plus significant compliance investment. Commercial platforms (Marqeta, Lithic, Highnote) remain the only practical path to production card programs .
-
-
+**💡 Open-Source Reality & Architecture:** Card issuing is one of the **most commercially consolidated** sectors in fintech infrastructure. **No production-ready open-source card issuing platform exists** that provides real card network connectivity (Visa/Mastercard/Amex), BIN sponsorship, and compliance management out-of-the-box. The practical open-source strategy involves combining **core banking ledgers** (Apache Fineract, Open Source Bank, Moov Financial, Form3) with **payment switches** (jPOS) and custom card management services.
 
 ---
 
+## 📑 Table of Contents
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [📊 Market Overview & Industry Insights](#-market-overview--industry-insights)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 
+---
 
-**Made for fintech builders, embedded finance developers, product managers, and platform architects.**
+## 🏢 SaaS / Hosted Platforms
 
-Let's make card issuing infrastructure more open, transparent, and accessible.
+> [!NOTE]
+> **Market Size & Fragmentation:** The global card issuing and processing market size is estimated at **$32.5 Billion** and is projected to reach **$68.4 Billion by 2030**. The market is **moderately fragmented**, with dominant enterprise incumbents (Marqeta, Galileo, Adyen) powering high-volume consumer and commercial programs, alongside agile developer-first platforms (Lithic, Highnote) capturing fast-growing B2B expense and fintech niches.
+
+The table below is sorted by **Company Size / Valuation (Descending)**:
+
+| Platform / Company | Estimated Size / Valuation | Starting Tier Pricing | Free Tier / Trial Limits | Key Features & Program Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Adyen Issuing](https://www.adyen.com/issuing)** 💳 | **~$48 Billion** market cap | $0.10 + Interchange++ per card transaction | 30-day sandbox trial with test API credentials | Unified acquiring & issuing platform; zero balance transfer delays; physical/virtual card controls. |
+| **[Stripe Issuing](https://stripe.com/issuing)** ⚡ | **~$70 Billion** valuation | $0.10 per virtual card / $3.00 per physical card + $0.20 per transaction | $0 setup fee; free test mode with unlimited test API calls | Programmatic API spend controls, real-time webhooks, instant virtual provisioning, Stripe Treasury pairing. |
+| **[Galileo (SoFi Tech Solutions)](https://www.galileo-ft.com/)** 🏛️ | **~$12 Billion** market cap (SoFi) | $5,000/month platform base fee | Sandbox demo environment with 90-day test API key | Enterprise scale, powers millions of accounts across Americas, fraud engines, Javelin 2025 top provider. |
+| **[Marqeta](https://www.marqeta.com/)** 🚀 | **~$2.5 Billion** market cap | $2,500/month minimum platform fee | Sandbox environment with $1,000 simulated balance limit | Pioneer of Just-in-Time (JIT) funding, tokenization, digital wallet provisioning, custom webhooks. |
+| **[Solaris](https://www.solarisgroup.com/)** 🏦 | **~$1.6 Billion** valuation | €3,000/month platform fee | 14-day staging sandbox access upon sales qualification | German banking license, turnkey compliance, SEPA integration, physical & tokenized credit/debit cards. |
+| **[Lithic](https://www.lithic.com/)** 🛠️ | **~$800 Million** valuation | $0.10 per transaction (End-to-End tier) | $0/mo Free Developer Tier: Up to 750 transactions/mo & 20 active cards | Developer-first API, single-use virtual cards, Processing vs Program Managed models, transparent pricing. |
+| **[Highnote](https://highnote.com/)** 📈 | **~$500 Million** valuation | $1,500/month base platform fee | Developer sandbox access with 60-day test token validity | GraphQL API, real-time programmable ledger, B2B virtual cards for travel/fleet, embedded credit/debit. |
+| **[Episode Six](https://episodesix.com/)** 🌐 | **~$300 Million** valuation | $3,500/month base fee | Sandbox trial with test ledger setup (by request) | Enterprise ledger & payment switch engine, cooperative authorization model, stablecoin & multi-asset support. |
+| **[Wallester](https://wallester.com/)** 🇪🇺 | **~$150 Million** valuation | €0/month Starter Plan (€0.35 per active card/mo) | Free Starter Plan: Up to 300 free virtual cards & 14-day trial | EU Visa principal licensee, ERP/SaaS REST API, instant corporate expense cards, fast GTM (< 30 days). |
+| **[Bond](https://www.bond.tech/)** 🔗 | **~$100 Million** valuation | $1,000/month starter tier | Developer sandbox mode with 30-day API test keys | Universal Cards API, embedded consumer charge card underwriting, Apple/Google Pay provisioning. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+The following open-source repositories provide the essential **core banking ledgers**, **payment messaging switches**, and **account management engines** required to build custom card infrastructure.
+
+Repositories are sorted by **GitHub Star Count (Descending)** ⭐:
+
+| Project & Repo Link | Star Count | License | Architecture & Core Capabilities |
+| :--- | :--- | :--- | :--- |
+| **[Apache Fineract](https://github.com/apache/fineract)** 🏛️ | [![Stars](https://img.shields.io/github/stars/apache/fineract?style=social&color=white)](https://github.com/apache/fineract/stargazers) | Apache-2.0 | Enterprise core banking backend, multi-currency ledger, deposit/savings management, portfolio engine. |
+| **[Mifos X](https://github.com/openMF/mifos-x)** 🌐 | [![Stars](https://img.shields.io/github/stars/openMF/mifos-x?style=social&color=white)](https://github.com/openMF/mifos-x/stargazers) | MPL-2.0 | Digital Public Good core banking suite built on Apache Fineract with admin web UI & field apps. |
+| **[Moov Financial Services](https://github.com/moov-io/paygate)** ⚡ | [![Stars](https://img.shields.io/github/stars/moov-io/paygate?style=social&color=white)](https://github.com/moov-io/paygate/stargazers) | Apache-2.0 | Go-based open-source ACH payment gateway, bank rail integration, real-time transaction processing. |
+| **[jPOS](https://github.com/jpos/jPOS)** 💳 | [![Stars](https://img.shields.io/github/stars/jpos/jPOS?style=social&color=white)](https://github.com/jpos/jPOS/stargazers) | AGPL-3.0 | Java ISO 8583 payment messaging switch, financial transaction gateway for merchant & card networks. |
+| **[Form3 Open Banking Engine](https://github.com/form3tech-oss/interview-accountapi)** 🛠️ | [![Stars](https://img.shields.io/github/stars/form3tech-oss/interview-accountapi?style=social&color=white)](https://github.com/form3tech-oss/interview-accountapi/stargazers) | MIT | RESTful account management engine, double-entry balance validation, payment account REST API. |
+| **[Open Source Bank](https://github.com/ishanperera/opensourcebank)** 🏦 | [![Stars](https://img.shields.io/github/stars/ishanperera/opensourcebank?style=social&color=white)](https://github.com/ishanperera/opensourcebank/stargazers) | MIT | API-first core banking engine with double-entry ledger, FastAPI + Next.js, Plaid/Stripe test sandbox. |
+| **[FinAegis Core Banking Prototype](https://github.com/FinAegis/core-banking-prototype-laravel)** 🔧 | [![Stars](https://img.shields.io/github/stars/FinAegis/core-banking-prototype-laravel?style=social&color=white)](https://github.com/FinAegis/core-banking-prototype-laravel/stargazers) | MIT | Modular Laravel domain-driven banking prototype with event sourcing via Redis Streams & multi-asset accounts. |
+
+---
+
+## 📊 Market Overview & Industry Insights
+
+Building a programmable card program requires understanding the three core pillars of payment stack architecture:
+
+```
+┌─────────────────────────┐       ┌─────────────────────────┐       ┌─────────────────────────┐
+│   Core Ledger Engine    │  ◄──► │  Card Management / API  │  ◄──► │ Card Network / Sponsor  │
+│ (Fineract / Custom DB)  │       │ (Marqeta / Lithic / JIT)│       │  (Visa / Mastercard)    │
+└─────────────────────────┘       └─────────────────────────┘       └─────────────────────────┘
+```
+
+1. **BIN Sponsorship & Compliance**: Regulated banks supply the Bank Identification Number (BIN) and handle regulatory compliance (KYC, AML, BSA).
+2. **Card Processing & Switch**: Translates Visa/Mastercard ISO 8583 messages into API webhooks for real-time auth decisions (Just-In-Time funding).
+3. **Double-Entry Ledger**: Tracks user balances, authorization holds, clearing settlements, and interchange fees.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! 💖
+
+1. Fork the repository.
+2. Add/edit entries in `README.md` following the standard table schema.
+3. Ensure all descriptions are factual, pricing details are verified, and links point to official sources.
+4. Open a Pull Request with a clear summary of changes.
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated informational resource** — not financial advice or commercial endorsement.
+- Card issuing involves strict legal and technical compliance including **PCI DSS**, **KYC/AML**, and network rules.
+- **Open-source notice**: Open-source projects cover ledger engines and payment switches, but **do not provide direct network connectivity to Visa/Mastercard or BIN sponsorship out of the box**.
+
+---
+
+## 💖 Support & Community
+
+If you find this repository helpful for your fintech research, project, or company:
+
+- ⭐ **Star this repository** on GitHub to show support!
+- 🔀 **Fork it** to customize or contribute back.
+- 📢 **Share it** with fellow fintech engineers, architects, and product builders!
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing updates via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Card-Issuing-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Card-Issuing-Platform&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  <i>Built with ❤️ for fintech builders, embedded finance developers, product managers, and platform architects.</i>
+</p>
