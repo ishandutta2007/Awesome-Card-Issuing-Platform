@@ -61,9 +61,9 @@ The table below is sorted by **Company Size / Valuation (Descending)**:
 
 The following open-source repositories provide the essential **core banking ledgers**, **payment messaging switches**, and **account management engines** required to build custom card infrastructure.
 
-Repositories are sorted by **GitHub Star Count (Descending)** ⭐:
+Repositories are sorted by **GitHub Stars_Count (Descending)** ⭐:
 
-| Project & Repo Link | Star Count | License | Architecture & Core Capabilities |
+| Project & Repo Link | Stars_Count | License | Architecture & Core Capabilities |
 | :--- | :--- | :--- | :--- |
 | **[Apache Fineract](https://github.com/apache/fineract)** 🏛️ | [![Stars](https://img.shields.io/github/stars/apache/fineract?style=social&color=white)](https://github.com/apache/fineract/stargazers) | Apache-2.0 | Enterprise core banking backend, multi-currency ledger, deposit/savings management, portfolio engine. |
 | **[Mifos X](https://github.com/openMF/mifos-x)** 🌐 | [![Stars](https://img.shields.io/github/stars/openMF/mifos-x?style=social&color=white)](https://github.com/openMF/mifos-x/stargazers) | MPL-2.0 | Digital Public Good core banking suite built on Apache Fineract with admin web UI & field apps. |
